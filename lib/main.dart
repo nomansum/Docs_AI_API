@@ -4,7 +4,7 @@ import 'package:docs_clone_flutter/screens/home_screen.dart';
 import 'package:docs_clone_flutter/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'dart:ui_web';
+//import 'dart:ui_web';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
