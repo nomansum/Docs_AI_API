@@ -2,7 +2,9 @@ const express = require('express');
 
 const mongoose = require('mongoose');
 
-const authRouter = require("./routes/auth")
+const authRouter = require("./routes/auth");
+
+const documentRouter = require('./routes/document');
 
 const cors = require('cors')
 
@@ -22,7 +24,8 @@ mongoose.connect(DB).then(()=>{
 }).catch((err)=>{
     console.log(err)
 })
-app.use(authRouter)
+app.use(authRouter);
+app.use(documentRouter);
 
 app.listen(PORT,"0.0.0.0",() => {
     console.log("Server Started! at 3001")
